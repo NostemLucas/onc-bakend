@@ -1,52 +1,52 @@
-@import 'tailwindcss';
-@import '@nuxt/ui';
+@import "tailwindcss";
+@import "@nuxt/ui";
 @font-face {
-	font-family: 'Horsham';
-	src: url('@/assets/fonts/Horsham.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Horsham";
+  src: url("@/assets/fonts/Horsham.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Roboto';
-	src: url('@/assets/fonts/Roboto.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @layer base {
-	@theme static {
-		--font-horsham: 'Horsham', sans-serif;
-		--font-roboto: 'Roboto', sans-serif;
-		--color-primary-50: hsl(210 70% 90%);
-		--color-primary-100: hsl(210 75% 80%);
-		--color-primary-200: hsl(210 70% 70%);
-		--color-primary-300: hsl(210 65% 60%);
-		--color-primary-400: hsl(210 60% 50%);
-		--color-primary-500: hsl(210 55% 45%);
-		--color-primary-600: hsl(210 50% 40%);
-		--color-primary-700: hsl(210 45% 35%);
-		--color-primary-800: hsl(210 40% 30%);
-		--color-primary-900: hsl(210 35% 25%);
-		--color-primary-950: hsl(210 30% 15%);
+  :root {
+    --font-horsham: "Horsham", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --ui-primary: #177bec;
+    --color-primary-50: #eff9ff;
+    --color-primary-100: #dbeffe;
+    --color-primary-200: #bee5ff;
+    --color-primary-300: #92d6fe;
+    --color-primary-400: #5ebefc;
+    --color-primary-500: #39a0f8;
+    --color-primary-600: #177bec;
+    --color-primary-700: #1b6bda;
+    --color-primary-800: #1d56b0;
+    --color-primary-900: #1d4a8b;
+    --color-primary-950: #162f55;
+    --color-foreground: hsl(0, 0%, 18%);
+    --color-background: hsl(0, 0%, 98%);
+  }
 
-		--color-foreground: hsl(0, 0%, 18%);
-		--color-background: hsl(0, 0%, 98%);
-	}
-
-	.dark {
-		--color-primary-50: hsl(225, 60%, 96%);
-		--color-primary-100: hsl(225, 60%, 90%);
-		--color-primary-200: hsl(225, 60%, 85%);
-		--color-primary-300: hsl(225, 60%, 75%);
-		--color-primary-400: rgb(112, 139, 219);
-		--color-primary-500: hsl(225, 60%, 58%);
-		--color-primary-600: hsl(225, 60%, 50%);
-		--color-primary-700: hsl(225, 60%, 45%);
-		--color-primary-800: hsl(225, 60%, 35%);
-		--color-primary-900: hsl(225, 60%, 30%);
-		--color-primary-950: hsl(225, 60%, 20%);
-	}
+  .dark {
+    --color-primary-50: hsl(225, 60%, 96%);
+    --color-primary-100: hsl(225, 60%, 90%);
+    --color-primary-200: hsl(225, 60%, 85%);
+    --color-primary-300: hsl(225, 60%, 75%);
+    --color-primary-400: rgb(112, 139, 219);
+    --color-primary-500: hsl(225, 60%, 58%);
+    --color-primary-600: hsl(225, 60%, 50%);
+    --color-primary-700: hsl(225, 60%, 45%);
+    --color-primary-800: hsl(225, 60%, 35%);
+    --color-primary-900: hsl(225, 60%, 30%);
+    --color-primary-950: hsl(225, 60%, 20%);
+  }
 }
 
 body {
-	font-family: Helvetica, sans-serif;
+  font-family: var(--font-roboto), sans-serif;
 }

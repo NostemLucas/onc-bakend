@@ -9,9 +9,13 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
     "@nuxt/ui",
     "@nuxt/image",
+    "@compodium/nuxt",
   ],
   css: ["~/assets/css/main.css"],
   typescript: {
     strict: true,
+  },
+  nitro: {
+    preset: "node-server",
   },
 });
